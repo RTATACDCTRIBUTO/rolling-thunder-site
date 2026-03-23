@@ -215,7 +215,7 @@
       <div class="eyebrow">Vídeos automáticos do Drive</div>
       <h1>Streaming da banda</h1>
       <p>
-        Esta página lê sua pasta do Google Drive via Apps Script e mostra automaticamente os vídeos mais recentes em layout premium.
+       página de vídeos mais recentes em layout premium.
       </p>
       <div class="status" id="status">Carregando vídeos...</div>
     </div>
@@ -226,7 +226,7 @@
       <div class="section-kicker">Catálogo automático</div>
       <h2 class="section-title">Vídeos</h2>
       <div class="section-desc">
-        Todo vídeo novo colocado na pasta configurada aparece aqui automaticamente.
+        Todos os vídeos novos estão aqui.
       </div>
 
       <div class="row-scroll" id="videoList"></div>
@@ -261,7 +261,7 @@
         const data = await res.json();
         const videos = Array.isArray(data.videos) ? data.videos : [];
 
-        statusEl.textContent = `${videos.length} vídeo(s) carregado(s) automaticamente do Google Drive.`;
+        statusEl.textContent = `${videos.length} vídeo(s) carregado(s).`;
 
         if (!videos.length) {
           emptyEl.style.display = 'block';
